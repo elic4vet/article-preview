@@ -8,11 +8,11 @@
   --dark-blue: hsl(217, 19%, 35%);
   --desaturated-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
-  --light-Blue: hsl(210, 46%, 95%);
+  --light-blue: hsl(210, 46%, 95%);
 }
 
 body {
-  background-color: var(--light-Blue);
+  background-color: var(--light-blue);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -65,11 +65,22 @@ p {
 }
 
 .share {
-  background-color: var(--dark-blue);
+  background-color: var(--light-blue);
   color: white;
   border: none;
   border-radius: 50%;
-  padding: 15px 15px;
+  padding: 10px 10px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+.share:hover {
+  background-color: var(--dark-blue);
+}
+
+.share:hover img {
+  filter: brightness(0) invert(1);
+}
+.share-icon:hover {
+  filter: brightness(0) invert(1);
 }
