@@ -180,6 +180,14 @@ p {
   margin-top: 20px;
 }
 
+.attribution a {
+  color: #377668;
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 3px;
+}
+
 @media (max-width: 768px) {
   .card {
     display: flex;
